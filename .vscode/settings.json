@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\mysql-connector-j-8.1.0.jar"
+    ],
+    "dotnet.defaultSolution": "C#/C#.sln"
+}

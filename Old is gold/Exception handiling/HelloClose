@@ -1,0 +1,22 @@
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class HelloClose {
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame frame = new JFrame("Simple Swing App");
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Use DISPOSE_ON_CLOSE
+            
+            JButton closeButton = new JButton("Close");
+            closeButton.addActionListener(e -> {
+                frame.dispose(); // Close the frame
+            });
+            
+            frame.getContentPane().add(closeButton);
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+        });
+    }
+}
